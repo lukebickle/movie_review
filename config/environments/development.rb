@@ -33,6 +33,9 @@ Rails.application.configure do
   config.assets.raise_runtime_errors = true
 
 
+  # needed for Paperclip
+  Paperclip.options[:command_path] = "/usr/local/bin/"
+
   #needed for devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
